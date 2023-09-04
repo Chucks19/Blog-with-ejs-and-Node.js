@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./head") %>
+<%- include("./Nav") %>
+
+<body>
+      <% if(blog.length > 0) { %>
+       <% blog.forEach(blogpostsItem =>{ %>
+        <section class ="section">
+        <a href="blogs/<%= blogpostsItem._id %>" >
+       <h1><%= blogpostsItem.title %> </h1>
+       <h2> <%= blogpostsItem.snippet %> </h2>
+       </a>
+       <% }) %>
+       <% } else { %>
+               <p>There are no blogs</p>
+       <% } %>
+        </section>
+</body>
+<%- include("./footer") %>
+</html>

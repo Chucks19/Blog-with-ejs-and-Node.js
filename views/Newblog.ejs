@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./head") %>
+<%- include("./Nav") %>
+
+<body>
+<div class="form">
+       <form action="blogs", method="post">
+              <label for ="Name"> Title </label>
+              <input type="text" name="title" id="Name"required>
+               <label  for ="snippet"> Snippet </label>
+              <input type="text" name="snippet" id="snippet"required>
+              <label for="textarea" > Post</label>
+              <textarea id="textarea" name="post"required></textarea>
+              <button>Submit</button>
+
+       </form>
+</div>
+</body>
+<%- include("./footer") %>
+</html>
